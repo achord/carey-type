@@ -5,8 +5,30 @@
 }
 
 // Google Fonts
-$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+$sans-serif:'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 $serif : TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+
+// Carey-type webfont
+// @font-face {
+//   font-family: 'Carey-Type-Regular';
+//   src:  url('/dist/fonts/Carey-Type.eot?tda377');
+//   src:  url('/dist/fonts/Carey-Type-webfont.eot?tda377#iefix') format('embedded-opentype'),
+//     url('/dist/fonts/Carey-Type-webfont.ttf?tda377') format('truetype'),
+//     url('/dist/fonts/Carey-Type-webfont.woff?tda377') format('woff'),
+//     url('/dist/fonts/Carey-Type-webfont.svg?tda377#Carey-Type') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'Carey-Type-Regular';
+  src: url('/dist/fonts/carey-type-webfont.woff2') format('woff2'),
+       url('/dist/fonts/carey-type-webfont.woff') format('woff'),
+       url('/dist/fonts/carey-type-webfont.ttf') format('truetype'),
+       url('/dist/fonts/carey-type-webfont.svg#carey-typeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: $sans-serif;
@@ -19,11 +41,11 @@ body {
   /* Better Font Rendering */
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
+ text-align: center;
 }
 
 h1{
-  font-size: 6rem;
-  line-height: 7.2rem;
+  display: none;
 }
 .test{
   font-size: 60px;
