@@ -9,8 +9,16 @@
 @import './components/_container';
 
 // Modules
-@import './modules/_Header';
+// @import './modules/_Header';
+@import './modules/_Hero'; 
+@import './modules/_Segue'; 
+@import './modules/_Content';
+@import './modules/_Characters';
+@import './modules/_Download';
+@import './modules/_Gallery';
+@import './modules/_Video';
+@import './modules/_Resources';
+@import './modules/_Donations';
 @import './modules/_Footer';
 @import './modules/_Btn';
-@import './modules/_Image';
-@import './modules/_Hero'; 
+// @import './modules/_Image';

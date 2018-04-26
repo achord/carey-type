@@ -1,0 +1,27 @@
+//Gallery
+.Gallery {
+  background-color: #eee;
+  padding: 5px 0;
+  background-color: yellow;
+  &-images {
+    // display: flex;
+    // width: 100%;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    // flex-direction: row;
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+  }
+  &-img {
+    width: 100%;
+    height: auto;
+  }
+  h2 {
+    display: none;
+  }
+}
