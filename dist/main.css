@@ -418,7 +418,7 @@ input, select {
     z-index: -1; }
 
 .Content--fullHeight {
-  min-height: 90vh;
+  min-height: 70vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -438,73 +438,6 @@ input, select {
       justify-content: center; }
   .Characters h2 {
     display: none; }
-
-.Download {
-  background-color: #eee;
-  padding: 5px 0;
-  height: 70vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .Download h2 {
-    margin: 40px 0; }
-
-.Gallery {
-  background-color: #eee;
-  padding: 5px 0;
-  background-color: yellow; }
-  .Gallery-images {
-    line-height: 0;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 2;
-    -moz-column-gap: 0px;
-    column-count: 2;
-    column-gap: 0px; }
-  .Gallery-img {
-    width: 100%;
-    height: auto; }
-  .Gallery h2 {
-    display: none; }
-
-.Video h2 {
-  display: none; }
-
-.Video-container {
-  position: relative;
-  height: 0;
-  margin: 10px auto;
-  padding-bottom: 56.25%;
-  /* 16:9 */ }
-
-.Video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd; }
-
-.Resources {
-  text-align: left; }
-
-.Donations {
-  background-color: #eee; }
-
-footer {
-  margin-top: 80px;
-  padding: 40px 20px 80px;
-  text-align: center;
-  color: #fff;
-  background-color: #000;
-  background-image: linear-gradient(-180deg, #000 0%, #31363a 100%); }
-  footer .tree {
-    margin: 40px auto;
-    width: 200px;
-    height: auto; }
 
 a.Btn {
   font-size: 1.8rem;
@@ -541,4 +474,89 @@ a.Btn {
     outline: 0; }
   a.Btn:hover {
     background-color: #ff2b75; }
+
+.Download {
+  background-color: #eee;
+  padding: 5px 0;
+  height: 70vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .Download h2 {
+    margin: 40px 0; }
+
+.Gallery {
+  background-color: #eee;
+  padding: 5px 0;
+  background-color: yellow; }
+  .Gallery-images {
+    line-height: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px; }
+  .Gallery-img {
+    width: 100%;
+    height: auto; }
+  .Gallery h2 {
+    display: none; }
+
+.Video {
+  background-color: #000;
+  padding: 70px; }
+  .Video h2 {
+    display: none; }
+  .Video-container {
+    position: relative;
+    height: 0;
+    margin: 10px auto;
+    padding-bottom: 56.25%;
+    /* 16:9 */ }
+  .Video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd; }
+
+.Resources {
+  text-align: left; }
+
+.Donations {
+  background-color: #eee; }
+
+.Credits-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 50px 10px; }
+
+.Credits-item {
+  margin: 20px; }
+
+.Credits h3 {
+  font-size: 2.1rem; }
+
+footer {
+  padding: 40px 20px 80px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  background-image: linear-gradient(-180deg, #000 0%, #31363a 100%); }
+  footer a {
+    color: #fff; }
+  footer .tree {
+    margin: 40px auto;
+    width: 200px;
+    height: auto; }
 

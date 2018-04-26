@@ -1,11 +1,12 @@
 footer{
-  margin-top: 80px;
   padding: 40px 20px 80px;
   text-align: center;
   color: #fff;
   background-color: #000;
   background-image: linear-gradient(-180deg, #000 0%, #31363a 100%);
-
+  a{
+    color:#fff;
+  }
   .tree{
     margin: 40px auto;
     width: 200px;

@@ -1,0 +1,15 @@
+//Credits
+.Credits {
+  &-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10px;
+  }
+  &-item{
+    margin: 20px;
+  }
+  h3{
+    font-size: 2.1rem;
+  }
+}
