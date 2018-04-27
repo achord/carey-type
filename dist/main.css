@@ -107,7 +107,7 @@ body {
   font-size: inherit;
   font-size: 1.6rem;
   font-style: normal;
-  line-height: 150%;
+  line-height: 175%;
   letter-spacing: 0;
   -webkit-text-size-adjust: 100% !important;
       -ms-text-size-adjust: 100% !important;
@@ -120,14 +120,12 @@ body {
 h1 {
   display: none; }
 
-.test {
-  font-size: 60px;
-  line-height: 72px; }
-
 h2 {
   font-size: 4.8rem;
   line-height: 6rem;
-  font-family: 'Carey-Type-Regular'; }
+  font-family: 'Carey-Type-Regular', sans-serif;
+  letter-spacing: -.1rem;
+  color: #D70A0C; }
 
 h3 {
   font-size: 3.6rem;
@@ -204,7 +202,7 @@ p {
   line-height: 3rem;
   letter-spacing: .02rem;
   color: #000;
-  margin: 0 0 20px;
+  margin: 0;
   padding: 0; }
   p strong {
     font-weight: 600; }
@@ -351,6 +349,11 @@ input, select {
     .container.large {
       max-width: 100%; } }
 
+#svgSprite path,
+rect,
+circle {
+  fill: yellow; }
+
 .Hero {
   min-height: 95vh;
   margin: 0;
@@ -457,7 +460,7 @@ a.Btn {
   padding: 25px 50px;
   text-transform: uppercase;
   color: #fff;
-  background-color: #f70056;
+  background-color: #D70A0C;
   margin: 5px; }
   a.Btn::-moz-focus-inner {
     padding: 0;
@@ -465,7 +468,7 @@ a.Btn {
   a.Btn:focus {
     outline: 0; }
   a.Btn:hover {
-    background-color: #ff2b75; }
+    background-color: #f51f21; }
 
 .Download {
   background-color: #eee;
@@ -524,20 +527,31 @@ a.Btn {
 .Donations {
   background-color: #eee; }
 
+.Credits h3 {
+  font-family: 'Carey-Type-Regular', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: -.2rem; }
+
 .Credits-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 50px 10px; }
 
 .Credits-item {
   margin: 20px; }
-
-.Credits h3 {
-  font-size: 2.1rem; }
+  .Credits-item a, .Credits-item svg {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    overflow: hidden; }
+  .Credits-item a {
+    margin: 10px 2px;
+    opacity: 1;
+    transition: opacity .23s; }
+    .Credits-item a:hover {
+      opacity: .85; }
 
 footer {
   padding: 40px 20px 80px;

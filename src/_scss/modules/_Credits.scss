@@ -1,15 +1,31 @@
 //Credits
 .Credits {
+  h3{
+    font-family: 'Carey-Type-Regular', sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: -.2rem;
+  }
   &-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    justify-content: space-around;
     margin: 50px 10px;
   }
   &-item{
     margin: 20px;
-  }
-  h3{
-    font-size: 2.1rem;
+    a, svg{
+      display: inline-block;
+      height: 26px;
+      width:  26px;
+      overflow: hidden;
+    }
+    a{
+      margin:10px 2px;
+      opacity:1;
+      transition: opacity .23s;
+      &:hover{
+        opacity: .85;
+      }
+    }
   }
 }
