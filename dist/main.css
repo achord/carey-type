@@ -198,11 +198,11 @@ sub {
 
 p {
   font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 3rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
   letter-spacing: .02rem;
   color: #000;
-  margin: 0;
+  margin: 2rem 0;
   padding: 0; }
   p strong {
     font-weight: 600; }
@@ -368,27 +368,27 @@ circle {
   fill: #fff; }
 
 .Hero {
-  min-height: 95vh;
-  margin: 0;
-  padding: 0;
   background-attachment: fixed;
+  background-position: center top;
   background-size: cover;
-  text-align: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  font-family: 'Carey-Type-Regular';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   -ms-flex-pack: center;
       justify-content: center;
-  position: relative;
-  z-index: 10;
-  font-family: 'Carey-Type' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
   line-height: 1;
-  background-position: center top; }
+  margin: 0;
+  min-height: 95vh;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  z-index: 10; }
   .Hero:before {
     content: '';
     position: absolute;
@@ -405,14 +405,17 @@ circle {
       font-size: 3rem; }
   .Hero p {
     color: black;
+    font-family: 'Carey-Type-Regular';
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 3rem;
     padding: 60px 6% 0; }
 
 @media (max-width: 767px) {
-  .Hero p br {
-    display: none; } }
+  .Hero {
+    background-attachment: initial; }
+    .Hero p br {
+      display: none; } }
 
 .Segue {
   min-height: 95vh;
