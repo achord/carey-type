@@ -514,18 +514,17 @@ a.Btn {
 .Gallery {
   background-color: #eee;
   padding: 5px 0;
-  background-color: yellow; }
+  background-color: yellow;
+  border: 10px solid red; }
   .Gallery-images {
-    line-height: 0;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 2;
-    -moz-column-gap: 0px;
-    column-count: 2;
-    column-gap: 0px; }
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 20px; }
   .Gallery-img {
-    width: 100%;
-    height: auto; }
+    height: auto;
+    display: block; }
   .Gallery h2 {
     display: none; }
 
