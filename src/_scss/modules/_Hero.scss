@@ -1,3 +1,5 @@
+$HeroTextColor: #fff;
+
 .Hero {
   background-attachment: fixed;
   background-position: 50% 35%;
@@ -23,13 +25,13 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
   h2 {
     margin-top: 15vw;
     font-size: 9rem;
-    color: #000;
+    color: $HeroTextColor;
     line-height: 7.5rem;
     letter-spacing: -.3rem;
     span {
@@ -42,7 +44,7 @@
     }
   }
   p {
-    color: black;
+    color: $HeroTextColor;
     font-family: 'Carey-Type-Regular';
     font-size: 2.4rem;
     letter-spacing: 0;
@@ -56,10 +58,10 @@
 @media (max-width: $screen-xs-max){
   .Hero {
     background-attachment: initial;
-    background-position: 0 100%;
     h2 {
       font-size: 6rem;
       margin-bottom: 0;
+      line-height: 6rem;
       span {
         font-size: 2.4rem;
         padding: 0;
