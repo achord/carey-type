@@ -259,6 +259,12 @@ textarea,
 select {
   padding: 15px 8px;
   box-sizing: border-box; }
+  input[type="text"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  select::-webkit-input-placeholder {
+    color: #666;
+    font-weight: 800;
+    opacity: 1; }
   input[type="text"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder,
   textarea:-ms-input-placeholder,
   select:-ms-input-placeholder {
@@ -304,6 +310,13 @@ select {
   color: #000;
   font-weight: 800;
   padding: 7px; }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  select::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #666;
+    padding: 5px 0;
+    opacity: 1; }
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder,
   select:-ms-input-placeholder {
@@ -381,21 +394,25 @@ circle {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: -1; }
   .Hero h2 {
     font-size: 10rem;
-    color: white; }
+    color: #000;
+    line-height: 9rem; }
     .Hero h2 span {
       display: block;
-      font-size: 3rem;
-      padding-bottom: 20px; }
+      font-size: 3rem; }
   .Hero p {
-    color: white;
+    color: black;
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 3rem;
-    padding: 60px 0 0; }
+    padding: 60px 6% 0; }
+
+@media (max-width: 767px) {
+  .Hero p br {
+    display: none; } }
 
 .Segue {
   min-height: 95vh;
