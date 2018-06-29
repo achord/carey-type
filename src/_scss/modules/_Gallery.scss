@@ -1,9 +1,7 @@
 //Gallery
 .Gallery {
-  background-color: #eee;
-  padding: 5px 0;
-  background-color: yellow;
-  border: 10px solid red;
+  background-color: white;
+  padding: 2%;
   &-images {
     display:grid;
     grid-template-columns:auto auto ;
@@ -12,8 +10,11 @@
   &-img {
     height: auto;
     display: block;
-    
-  
+    &--full{
+     width: 100%;
+     height: auto;
+     margin: 20px 0;
+    }
   }
   h2 {
     display: none;

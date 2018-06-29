@@ -6,12 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
-<<<<<<< HEAD
     "server": "browser-sync start --mode development --directory --server --files '**/*.js, **/*.html, **/*.css, **/*.scss'"
-=======
-    "server": "browser-sync start --mode development --directory --server --files '*.js, *.html, *.css, *.scss'",
-    "start": "browser-sync start --server --files '**/*.js, **/*.html, **/*.css, **/*.scss' --directory --port 7777 --browser 'firefox'"
->>>>>>> 8-image-gallery
   },
   "author": "",
   "license": "ISC",

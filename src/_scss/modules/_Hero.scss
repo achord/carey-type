@@ -1,7 +1,8 @@
 .Hero {
   background-attachment: fixed;
-  background-position: center top;
+  background-position: 50% 35%;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   font-family: 'Carey-Type-Regular';  
@@ -26,12 +27,18 @@
     z-index: -1;
   }
   h2 {
-    font-size: 10rem;
+    margin-top: 15vw;
+    font-size: 9rem;
     color: #000;
-    line-height: 9rem;
+    line-height: 7.5rem;
+    letter-spacing: -.3rem;
     span {
       display: block;
       font-size: 3rem;
+      margin: 0;
+      padding: 0;
+      line-height: 5rem;
+      letter-spacing: .15rem;
     }
   }
   p {
@@ -40,20 +47,30 @@
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 3rem;
-    padding: 60px 6% 0;
+    padding: 30px 30vw 0;
   }
 }
 
 // Media Queries ***********************************************
 // Phone   
 @media (max-width: $screen-xs-max){
-  .Hero{
-    background-attachment:initial;
-    h2{
-
+  .Hero {
+    background-attachment: initial;
+    background-position: 0 100%;
+    h2 {
+      font-size: 6rem;
+      margin-bottom: 0;
+      span {
+        font-size: 2.4rem;
+        padding: 0;
+      }
     }
-    p{
-      br{
+    p {
+      font-size: 2.1rem;
+      letter-spacing: -.05rem;
+      line-height: 3rem;
+      padding: 0 5px 0;
+      br {
         display: none;
       }
     }

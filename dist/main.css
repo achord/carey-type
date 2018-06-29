@@ -71,23 +71,28 @@ body {
   font-size: 62.5%;
   overflow-x: hidden; }
 
+a {
+  color: #D70A0C; }
+
 a:link,
 a:focus {
-  transition: color 0.17s ease-in-out; }
+  color: #D70A0C;
+  transition: color 0.17s ease-in-out;
+  text-decoration: none; }
 
 p a:link,
 p a:active,
 p a:focus {
   transition: color 0.17s ease-in-out;
-  text-decoration: underline;
-  color: #CBB46C;
+  text-decoration: none;
+  color: #D70A0C;
   -ms-touch-action: manipulation;
       touch-action: manipulation; }
 
 p a:active,
 p a:hover,
 p a:visited {
-  color: #ad923d; }
+  color: #D70A0C; }
 
 img {
   width: 100%;
@@ -167,7 +172,8 @@ ol {
 
 li {
   font-size: inherit;
-  line-height: 150%; }
+  line-height: 150%;
+  margin-bottom: 10px; }
 
 /* Let's make sure all's aligned */
 hr,
@@ -196,20 +202,25 @@ sup {
 sub {
   bottom: -.25em; }
 
-p {
+p, ul {
   font-weight: 500;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  font-size: 2.1rem;
+  line-height: 3rem;
   letter-spacing: .02rem;
   color: #000;
   margin: 2rem 0;
   padding: 0; }
-  p strong {
+  p strong, ul strong {
     font-weight: 600; }
-  p i, p em {
+  p i, p em, ul i, ul em {
     font-style: italic; }
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: -.1rem;
+    margin-bottom: 15px; }
   h4 {
     font-size: 3.2rem;
     margin: 20px 0 40px; }
@@ -219,9 +230,9 @@ p {
     margin-bottom: 20px; }
   h6 {
     font-size: 1.4rem; }
-  p {
-    font-size: 1.8rem;
-    line-height: 3rem; } }
+  p, ul {
+    font-size: 2.4rem;
+    line-height: 3.6rem; } }
 
 button {
   position: relative;
@@ -369,8 +380,9 @@ circle {
 
 .Hero {
   background-attachment: fixed;
-  background-position: center top;
+  background-position: 50% 35%;
   background-size: cover;
+  background-repeat: no-repeat;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -397,25 +409,43 @@ circle {
     background-color: rgba(255, 255, 255, 0.5);
     z-index: -1; }
   .Hero h2 {
-    font-size: 10rem;
+    margin-top: 15vw;
+    font-size: 9rem;
     color: #000;
-    line-height: 9rem; }
+    line-height: 7.5rem;
+    letter-spacing: -.3rem; }
     .Hero h2 span {
       display: block;
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+      line-height: 5rem;
+      letter-spacing: .15rem; }
   .Hero p {
     color: black;
     font-family: 'Carey-Type-Regular';
     font-size: 2.4rem;
     letter-spacing: 0;
     line-height: 3rem;
-    padding: 60px 6% 0; }
+    padding: 30px 30vw 0; }
 
 @media (max-width: 767px) {
   .Hero {
-    background-attachment: initial; }
-    .Hero p br {
-      display: none; } }
+    background-attachment: initial;
+    background-position: 0 100%; }
+    .Hero h2 {
+      font-size: 6rem;
+      margin-bottom: 0; }
+      .Hero h2 span {
+        font-size: 2.4rem;
+        padding: 0; }
+    .Hero p {
+      font-size: 2.1rem;
+      letter-spacing: -.05rem;
+      line-height: 3rem;
+      padding: 0 5px 0; }
+      .Hero p br {
+        display: none; } }
 
 .Segue {
   min-height: 95vh;
@@ -432,6 +462,12 @@ circle {
       justify-content: center;
   position: relative;
   z-index: 10; }
+
+@media (max-width: 767px) {
+  .Segue {
+    background-attachment: initial;
+    background-position: center top;
+    min-height: 50vh; } }
 
 .Content--fullHeight {
   min-height: 70vh;
@@ -494,7 +530,7 @@ a.Btn {
 .Download {
   background-color: #eee;
   padding: 5px 0;
-  height: 70vh;
+  min-height: 70vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -512,10 +548,8 @@ a.Btn {
     margin: 0 0 -9px 10px; }
 
 .Gallery {
-  background-color: #eee;
-  padding: 5px 0;
-  background-color: yellow;
-  border: 10px solid red; }
+  background-color: white;
+  padding: 2%; }
   .Gallery-images {
     display: -ms-grid;
     display: grid;
@@ -525,12 +559,16 @@ a.Btn {
   .Gallery-img {
     height: auto;
     display: block; }
+    .Gallery-img--full {
+      width: 100%;
+      height: auto;
+      margin: 20px 0; }
   .Gallery h2 {
     display: none; }
 
 .Video {
   background-color: #000;
-  padding: 70px; }
+  padding: 3%; }
   .Video h2 {
     display: none; }
   .Video-container {
@@ -548,11 +586,18 @@ a.Btn {
     height: 100%;
     border: 1px solid #ddd; }
 
-.Resources {
-  text-align: left; }
+.Resources ul {
+  list-style: none; }
+  .Resources ul li {
+    margin-bottom: 20px; }
 
 .Donations {
-  background-color: #eee; }
+  background-color: white;
+  padding: 10% 20px; }
+  .Donations img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; }
 
 .Credits h2 {
   color: #fff; }
@@ -583,6 +628,20 @@ a.Btn {
     transition: opacity .23s; }
     .Credits-item a:hover {
       opacity: .85; }
+
+@media (max-width: 767px) {
+  .Credits {
+    padding: 0; }
+    .Credits-container {
+      display: block; }
+    .Credits-item {
+      margin: 30px 0;
+      line-height: 0; }
+    .Credits h3 {
+      font-size: 2.8rem; }
+    .Credits h3, .Credits h4 {
+      margin: 0;
+      padding: 0; } }
 
 footer {
   padding: 40px 20px 80px;

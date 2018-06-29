@@ -20,3 +20,14 @@
   //   z-index: -1;
   // }
 }
+
+
+// Media Queries ***********************************************
+// Phone   
+@media (max-width: $screen-xs-max){
+  .Segue {
+    background-attachment: initial;
+    background-position: center top;
+    min-height: 50vh;
+  }
+}

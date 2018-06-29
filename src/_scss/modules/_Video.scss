@@ -1,7 +1,7 @@
 //Video
 .Video {
   background-color: #000;
-  padding:70px;
+  padding:3%;
   h2 {
     display: none;
   }
@@ -24,3 +24,9 @@
     border: 1px solid #ddd;
   }
 }
+
+
+// Media Queries ***********************************************
+// // Phone   
+// @media (max-width: $screen-xs-max){
+// }

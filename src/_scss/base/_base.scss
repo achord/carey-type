@@ -31,9 +31,14 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  color:$primary;
+}
 a:link,
 a:focus {
+  color:$primary;
   @include transitionColor($time: .17s);
+  text-decoration: none;
 }
 
 p{
@@ -41,14 +46,14 @@ p{
   a:active,
   a:focus {
     @include transitionColor($time: .17s);
-    text-decoration: underline;
-    color: $active;
+    text-decoration: none;
+    color: $primary;
     touch-action: manipulation;
   }
   a:active,
   a:hover,
   a:visited{
-    color: darken($active, 15);
+    color: $primary
   }
 }
 
